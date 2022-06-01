@@ -31,6 +31,9 @@ switch(true){
 }
 
 
+
+
+
 const symbols = [')', '!', '@', '#', '$', '%', '^', '&', '*', '('];
 let symbol = +prompt('Вкажіть цифру від 0 до 9');
 
@@ -39,6 +42,11 @@ for (let i = 0; i < 10; i++) {
         alert('Спец символ числа = ' + symbols[i]);
     }
 }
+
+
+
+
+
 
 let x = +prompt("Введіть перше число діапазону:");
 let y = +prompt("Введіть друге число діапазону:");
@@ -51,6 +59,9 @@ for (i = x; x<=y; x++) {
     }
 }
 alert(sum);
+
+
+
 
 let a = +prompt("Введіть перше число:");
 let b = +prompt("Введіть друге число:");
@@ -92,6 +103,9 @@ if ( (pal> 9999) && (pal<100000)) {
     alert ('Ви ввели не п*ятизначне число!');
 };
 
+
+
+
 const price = +prompt('Введіть суму покупки в USD:');
 
 switch(true) {
@@ -110,11 +124,21 @@ switch(true) {
     default: alert('Сумма до оплати  = ' + price + ' USD');
 };
 
+
+
+
 const weekDays = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
 
 for (i=0; i<7; i++) {
     alert( 'Today is ' + weekDays[i] + '!');
+    // if (i==6) {
+    //     i=-1;
+    // }
 } 
+
+
+
+
 
 let numbers = [];
 
@@ -126,6 +150,7 @@ let minus = 0;
 let zero = 0;
 let even = 0;
 let add = 0;
+
 
 
 
@@ -148,7 +173,6 @@ alert('Додатніх чисел - ' + plus);
 alert('Від*ємних чисел - ' + minus);
 alert('Нулів - ' + zero);
 
-
 for(i=0; i<10; i++) {
     switch(true) {
         case(numbers[i]%2==0 && numbers[i]!=0):
@@ -167,6 +191,7 @@ alert ('Парних чисел - ' + even);
 alert ('Непарних чисел - ' + add);
 
 
+
 // maximum
 
 let tab = []
@@ -177,3 +202,61 @@ for (i=2; i<10; i++) {
     }
 }
 alert('Таблиця множення чисел від 2 до 9 = ' + tab);
+
+
+
+
+let day = +prompt('Введіть день:');
+let month = +prompt('Введіть місяць:');
+let year = +prompt('Введіть рік');
+
+switch (true) {
+    case (month == 12 && day == 31) :
+        alert( 1 + ' ' + 1 + ' ' + (year+1));
+    break;
+    case (year % 4 == 0 && month == 2 && day == 29):
+        alert( '1' + ' ' + (month + 1) + ' ' + year);
+    breake;
+    case (year % 4 != 0 && month == 2 && day == 28):
+        alert( '1' + ' ' + (month + 1) + ' ' + year);
+    breake;
+    case ( month == 4 || month == 6 || month == 9 || month == 11) :
+        if ( day == 30) {
+            alert( '1' + ' ' + (month + 1) + ' ' + year);
+        } else {
+            alert( (day+1) + ' ' + month + ' ' + year);
+        }
+    break;
+    default: if ( day == 31) {
+        alert( '1' + ' ' + (month + 1) + ' ' + year);
+    } else {
+        alert( (day+1) + ' ' + month + ' ' + year);
+    };
+}
+
+
+
+let down = 0;
+let up = 100;
+let res;
+
+alert('Загадай число від 0 до 100');
+
+while(true) {
+    res = Math.floor( (up + down ) / 2 );
+    res = Math.trunc(res);
+
+    let check = prompt('Ваше число > ' + res + ', ' + ' < ' + res + ' або = ' + res + ' ? ');
+    if ( check == '=') {
+        alert(res);
+        break;
+
+    }
+    else  if ( check == '>') {
+            down = Math.floor((up + down) / 2 );
+    } 
+    else {
+           up = Math.floor((up + down) / 2);
+    }
+    
+}
