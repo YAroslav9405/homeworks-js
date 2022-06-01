@@ -1,3 +1,6 @@
+
+// minimum
+
 const age = prompt('Вкажіть свій вік:');
 
 switch(true){
@@ -66,6 +69,9 @@ for (let i=0; i<=c; i++) {
       alert('Дільники = ' + i);
   }
 }
+
+
+// norma
 
 let pal = prompt('Введіть п*ятизначне число:');
 
@@ -161,3 +167,13 @@ alert ('Парних чисел - ' + even);
 alert ('Непарних чисел - ' + add);
 
 
+// maximum
+
+let tab = []
+
+for (i=2; i<10; i++) {
+    for (j=1; j<11; j++) {
+        tab += j*i+" ";
+    }
+}
+alert('Таблиця множення чисел від 2 до 9 = ' + tab);
