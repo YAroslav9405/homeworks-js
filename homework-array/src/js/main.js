@@ -102,29 +102,29 @@ addProduct();
    console.log(withoutItem);
 
 
-//maximum
+// maximum
 
-//    let sum= 0;
+   let sum= 0;
 
-//    for (let i =0; i < withoutItem.length; i++) {
-//     sum = sum + withoutItem[i].allprice;
-//    }
-// console.log('Загальна сумма = ' + sum);
+   for (let i =0; i < withoutItem.length; i++) {
+    sum = sum + withoutItem[i].allprice;
+   }
+console.log('Загальна сумма = ' + sum);
 
-// let sumFalse = 0; 
+let sumFalse = 0; 
 
-// for (let i =0; i < withoutItem.length; i++) {
-//     if( withoutItem[i].buy == false) {
-//         sumFalse = sumFalse + withoutItem[i].allprice;
-//     }
-//    }
+for (let i =0; i < withoutItem.length; i++) {
+    if( withoutItem[i].buy == false) {
+        sumFalse = sumFalse + withoutItem[i].allprice;
+    }
+   }
 
-// console.log( 'Сума не придбаних продуктів = ' + sumFalse);
+console.log( 'Сума не придбаних продуктів = ' + sumFalse);
 
-// function sortByAllPrice (withoutItem) {
-//     withoutItem.sort((a,b) => a.allprice > b.allprice ? 1 : -1)
-// }
-// sortByAllPrice(withoutItem);
+function sortByAllPrice (withoutItem) {
+    withoutItem.sort((a,b) => a.allprice > b.allprice ? 1 : -1)
+}
+sortByAllPrice(withoutItem);
 
 
-// console.log(withoutItem);
+console.log(withoutItem);
