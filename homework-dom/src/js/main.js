@@ -94,8 +94,7 @@ function modalClose() {
 }
 
 
-let ligths = document.querySelectorAll('.light');
-console.log(ligths);
+
 
 let red = document.getElementById('red');
 let orange = document.getElementById('orange');
