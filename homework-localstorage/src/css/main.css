@@ -1,0 +1,28 @@
+body {
+    background-image:  url(https://foreignpolicy.com/wp-content/uploads/2021/11/nature-human-redwood-forest-iStock-182162838.jpg?quality=90);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   transform: translate(0, 50% );
+}
+
+.temp-holder{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.title,
+.text
+{
+    color: #fff;
+}
+
+.text.temp {
+    font-size: 41px;
+}
