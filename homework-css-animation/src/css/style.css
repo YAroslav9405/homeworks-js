@@ -1,0 +1,79 @@
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+.card-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card {
+    position: relative;
+    list-style: none;
+    perspective: 1000px;
+    margin-bottom: 20px;
+}
+
+
+.front {
+    transition: all ease-in-out 0.8s;
+    backface-visibility: hidden;
+    animation: rotateFront 3s infinite;
+    
+}
+
+.back
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all ease-in-out 0.8s;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    animation: rotateBack 3s infinite;
+
+}
+
+
+/* .card:hover .front {
+    transform: rotateY(180deg);
+}
+
+.card:hover .back {
+    transform: rotateY(0deg);
+} */
+
+
+@keyframes rotateFront {
+
+    0% {
+        transform: rotateY(0deg);
+    }
+
+    50% {
+        transform: rotateY(180deg);
+    }
+
+    100% {
+        transform: rotateY(0deg);
+    }
+}
+
+@keyframes rotateBack {
+
+    0% {
+        transform: rotateY(180deg);
+    }
+
+    50% {
+        transform: rotateY(0deg);
+    }
+
+    100% {
+        transform: rotateY(180deg);
+    }
+}

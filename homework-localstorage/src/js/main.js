@@ -57,7 +57,7 @@ let container = document.querySelector('.container');
         container.insertAdjacentHTML('beforeend', forecast);
         }
         
-    })}, interval );
+    })},  interval);
     
     
 };
