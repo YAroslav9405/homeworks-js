@@ -1,0 +1,1 @@
+{"version":3,"sources":["_header.scss","main.scss"],"names":[],"mappings":"AAAA;EACI;EACA;;;ACCJ;EACI;;;AAGJ;EACI;EACA;EACA","file":"main.css","sourcesContent":[".header {\n    height: 330px;\n    background-color: blue;\n}","\n@import \"header\";\n\n* {\n    box-sizing: border-box;\n}\n\nbody {\n    background-color: yellow;\n    margin: 0;\n    padding: 0;\n}"]}

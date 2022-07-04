@@ -1,0 +1,15 @@
+.header {
+  height: 330px;
+  background-color: blue;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: yellow;
+  margin: 0;
+  padding: 0;
+}
+/*# sourceMappingURL=main.css.map */
