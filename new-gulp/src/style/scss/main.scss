@@ -1,0 +1,24 @@
+@import "header";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: yellow;
+  margin: 0;
+  padding: 0;
+  color: black;
+  font-size: 21px;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+
+  .col {
+    width: calc(100% / 3);
+    padding: 0 15px 20px;
+  }
+}
+

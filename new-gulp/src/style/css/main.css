@@ -1,0 +1,26 @@
+.header {
+  height: 351px;
+  background-color: blue;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: yellow;
+  margin: 0;
+  padding: 0;
+  color: black;
+  font-size: 21px;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+.flex .col {
+  width: 33.3333333333%;
+  padding: 0 15px 20px;
+}
+/*# sourceMappingURL=main.css.map */
