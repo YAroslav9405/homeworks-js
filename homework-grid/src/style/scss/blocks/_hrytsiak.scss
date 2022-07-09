@@ -1,0 +1,59 @@
+.grid-container {
+        display: grid;
+
+        grid-template-areas: 
+                "big-img"
+                "small-img-1"
+                "small-img-4"
+                "small-img-3"
+                "small-img-2"
+                ;
+
+        @include respond-to('tablet') {
+                grid-template-areas: 
+                "big-img  small-img-1"
+                "small-img-4 small-img-4"
+                "small-img-3 small-img-2"
+                ;
+        }
+
+        @include respond-to('laptop') {
+                grid-template-areas: 
+                "big-img big-img small-img-1 small-img-4 "
+                "big-img big-img small-img-3 small-img-2"
+                ;
+        }
+
+        @include respond-to('desktop') {
+                grid-template-areas: 
+                "big-img big-img small-img-1 small-img-4 "
+                "big-img big-img small-img-3 small-img-2"
+                ;
+        }
+
+        gap: 10px;
+}
+
+.grid-item-1 {
+        grid-area: big-img;
+}
+
+.grid-item-2 {
+        grid-area: small-img-1;
+}
+
+.grid-item-3 {
+        grid-area: small-img-2;
+}
+
+.grid-item-4 {
+        grid-area: small-img-3;
+}
+
+.grid-item-5 {
+        grid-area: small-img-4;
+}
+
+
+
+
