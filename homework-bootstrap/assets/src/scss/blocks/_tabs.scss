@@ -1,0 +1,247 @@
+.tabs {
+    
+    .card-container {
+        display: block;
+        background-color: #fff;
+        width: 100%;
+        min-width: 1191px !important;
+        min-height: 820px;
+    }
+    
+    .nav {
+        --bs-nav-link-color: black;
+        --bs-nav-link-hover-color: black;
+        background-color:  rgba(0, 0, 0, 0.03);
+    }
+    
+    .tab-container {
+        padding: 16px 16px 0;
+    }
+    
+    .details {
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 120%;
+        margin-bottom: 40px;
+    }
+    
+    .input-group.mb-3,
+    .input-group.mb-3.new {
+        width: 508px;
+        margin-bottom: 29px;
+    }
+    
+    .input-first-holder {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        
+    }
+    
+    .input-group.mb-3.date,
+    .input-group.mb-3.country,
+    .input-group.mb-3.city {
+        width: 328px;
+    }
+    
+    .input-group.mb-3.new {
+        width: 100%;
+        max-width: 1162px;
+    }
+    
+    .form-floating>label {
+        padding: 6px 0 0 12px;
+        color: #6C757D;
+    }
+    
+    .bi.bi-info-circle.info {
+        padding-left: 4px;
+    }
+    
+    .form-floating>textarea {
+        height: 86px !important;
+        margin-bottom: 80px;
+    }
+    
+    .button-holder {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+    }
+    
+    .btn.btn-dark {
+        margin-right: 20px;
+    }
+
+    
+    .details.activity{
+        margin-bottom: 48px;
+    }
+    
+    .active-users {
+        font-size: 16px;
+        margin-bottom: 9px;
+    }
+    
+    .table>.thead-head {
+        border-top: 2px solid black;
+        background-color:rgba(0, 0, 0, 0.03);
+    }
+    
+    .twiter {
+        border-bottom: 1px solid #fff;
+    }
+    
+    .table {
+        margin-bottom: 49px;
+    }
+    
+    .table.table-striped>.new-head {
+        border-bottom: 2px solid #fff !important;
+    }
+    
+    .check-holder {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .form-check-input:checked {
+        background-color: black;
+        border-color: black;
+    }
+    
+    .btn.btn-dark.new {
+        margin-right: 8px;
+        width: 42px;
+        height: 31px;
+        font-size: 14px;
+        line-height: 150%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;  
+        padding-top: 3px;
+    }
+    
+    .button-holder.new {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;   
+    }
+    
+    .btn.btn-secondary.new {
+        width: 58px;
+        height: 31px;
+        font-size: 14px;
+        line-height: 150%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;  
+        padding-top: 3px;
+    }
+    
+    .span-holder-warning {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        padding-top: 1px;  
+    }
+    
+    .badge.text-bg-warning {
+        width: 56px;
+        height: 20px;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;  
+        padding-top: 4px;
+    }
+    
+    .badge.text-bg-success {
+        width: 72px;
+        height: 20px;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;  
+        padding-top: 4px;
+    }
+    
+    .badge.text-bg-danger {
+        width: 69px;
+        height: 20px;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;  
+        padding-top: 4px;
+    }
+
+    .main-help-holder {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        .details.help {
+            margin-bottom: 40px;
+        }
+        
+       
+        
+        .title-general {
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 150%;
+            margin-bottom: 20px;
+        }
+        
+        .acordeon-holder-new {
+            width: 100%;
+            max-width: 565px;
+            border: 1px solid rgba(0, 0, 0, 0.175);
+            border-radius: 4px;
+        }
+        
+        .accordion-button:not(.collapsed) {
+            color: black;
+            background-color: #DEE2E6;
+            box-shadow: none;
+        }
+        
+        .accordion-button:focus {
+            border-color: black;
+        }
+        
+        .accordion-button:not(.collapsed)::after {
+           background-image: var(--bs-accordion-btn-icon);
+        }
+        
+        
+        .help-holder-second,
+        .help-holder-first {
+            width: 100%;
+            max-width: 565px;
+        }
+
+        .accordion-item {
+            @extend .help-holder-first;
+        }
+        
+    }
+}
+
+.message-new {
+    width: 100%;
+    max-width: 1157px;
+    min-height: 56px;
+    background-color:  #DEE2E6;
+    padding: 16px;
+    border: 1px solid #CED4DA;
+    border-radius: 4px;
+    margin-bottom: 40px;
+}

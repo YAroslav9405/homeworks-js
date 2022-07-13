@@ -1,0 +1,53 @@
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar {
+    background-color: rgb(105, 102, 102) !important;
+    --bs-navbar-color: #fff;
+}
+
+.accordion-item {
+    width: 112px;
+}
+
+.svg-holder {
+    background-color: #DEDEDE;
+    border-radius: 100%;
+}
+
+
+.accordion {
+    --bs-accordion-bg: none;
+    --bs-accordion-btn-focus-border-color: #fff;
+    --bs-accordion-btn-focus-box-shadow: #fff;
+    --bs-accordion-active-color: #fff;
+    --bs-accordion-active-bg: #fff;
+}
+
+.accordion-flush .accordion-item .accordion-button {
+    border-radius: 10px ;
+
+}
+
+.accordion-button:not(.collapsed) {
+    color: black !important;
+    box-shadow: none !important;
+}
+
+.accordion-button:not(.collapsed)::after {
+ background-image: var(--bs-accordion-btn-icon);
+}
+
+.new-link {
+    width: 59px;
+    display: flex;
+    justify-content: center;
+}
+
+.new-nav-items {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}

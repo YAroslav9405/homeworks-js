@@ -1,0 +1,31 @@
+@import "../../../node_modules/bootstrap/scss/bootstrap";
+@import "vars";
+@import "typo";
+@import "grids";
+@import "mixins";
+@import "modals";
+@import "blocks/header";
+@import "blocks/sidebar";
+@import "blocks/profile";
+@import "blocks/tabs";
+
+/**
+ *  Reset defaults
+ */
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+p {
+    margin: 0;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+    background-color: #E5E5E5;
+}

@@ -1,0 +1,116 @@
+header {
+    .offcanvas.offcanvas-end {
+        top: 77px;
+        left: 0;
+    }
+    .offcanvas-backdrop.show {
+        opacity: 0;
+    }
+    .offcanvas.offcanvas-end {
+        transform: translateX(-100%);
+    }
+    
+    .offcanvas-sm, .offcanvas-md, .offcanvas-lg, .offcanvas-xl, .offcanvas-xxl, .offcanvas {
+        --bs-offcanvas-width: 260px;
+    }
+    
+    .nav-item {
+        height: 49px;
+        border-left: 5px solid #fff;
+        transition: transform 0.3s ease-in-out;
+    }
+    
+    .settings {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        border-top: 1px solid #EBEBEB;
+         border-left: 5px solid #fff;
+    }
+    
+    .offcanvas-sm, .offcanvas-md, .offcanvas-lg, .offcanvas-xl, .offcanvas-xxl, .offcanvas {
+        --bs-offcanvas-padding-x: 0;
+        --bs-offcanvas-padding-y: 0;
+    }
+    
+    .pe-3 {
+        padding-right: 0px !important;
+    }
+    
+    .nav-item.bord {
+        border-bottom: 1px solid #EBEBEB !important;
+    }
+    
+    .nav-link.active {
+        height: 49px;
+        padding: 8px 0;
+        display: flex;
+        align-items: center;
+    }
+    
+    .nav-link.grey.active {
+        width: 254px;
+    }
+    
+    .new-svg-holder {
+        padding: 0 18px;
+    }
+    
+    .sidebar {
+        padding-top: 100px;
+    }
+    
+    .nav-item:hover,
+    .settings:hover {
+        background-color: #F5F5F5;
+        border-left: 5px solid rgba(0, 0, 0, 0.56);
+    }
+    
+    .nav-item.bord:hover {
+        border-left: 5px solid rgba(0, 0, 0, 0.56);
+    }
+    
+    .border {
+        border-left: 5px solid #fff !important; 
+        transition: transform 0.3s ease-in-out;
+    }
+    
+    .border:hover {
+        border-left: 5px solid rgba(0, 0, 0, 0.56) !important; 
+    }
+    
+    .nav-link::before {
+        content: '';
+        width: 24px;
+        height: 24px;
+        border-radius: 100%;
+        margin: 0 18px;
+        background-color: #707070;
+        visibility: hidden;
+    }
+    
+    .nav-link:hover::before {
+        visibility: visible;
+    }
+    
+    .nav-link.grey:hover::before {
+        background-color: #707070
+    }
+    
+    .nav-link.grey::before {
+        @extend .nav-link::before;
+        background-color: #DEDEDE;
+        visibility: visible;
+    }
+    
+    .nav-link.new::before {
+        content: '';
+        display: none;
+    }
+    
+    .nav-link {
+        visibility: visible;
+        transition: transform 0.3s ease-in-out;
+    }
+
+}

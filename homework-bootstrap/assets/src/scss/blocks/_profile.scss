@@ -1,0 +1,155 @@
+.profile {
+  padding: 77px 0 0 294px;
+  visibility: hidden;
+  transition: all ease-in-out 0.3s;
+  z-index: 200000;
+}
+
+.profile.active-new {
+    visibility: visible;
+}
+
+.main-holder {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.first-holder {
+    margin-right: 26px;
+}
+
+.breadcrumb-item.active {
+    color: black !important;
+}
+
+a {
+    list-style: none;
+    color: #8F8F8F;
+    text-decoration: none;
+}
+
+.breadcrumb {
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.breadcrumb {
+    font-size: 14px;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 35px;
+    padding-left: 15px;
+}
+
+.user {
+    width: 100%;
+    max-width: 380px;
+    height: 240px;
+    background-color: #fff;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.14), 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 3px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    margin-bottom: 30px;
+}
+
+.img-holder {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 40px; 
+    margin-bottom: 20px;
+}
+
+.text-holder {
+    display: flex;
+    justify-content: center;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 10px;
+}
+
+.txt-holder {
+    @extend .text-holder;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    color: #BDBDBD;
+}
+
+.skills {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+}
+
+.skills-holder {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+
+    .btn.btn-secondary {
+        width: 100%;
+        max-width: 36px;
+        height: 20px;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+
+
+.my-skills {
+    @extend .user;
+    height: 422px;
+    padding: 30px;
+}
+
+.progres-txt {
+    margin-bottom: 5px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.progress {
+    margin-bottom: 10px;
+}
+
+.progress-bar {
+   background-color:  rgba(0, 0, 0, 0.56);
+}
+
+.w-item-1 {
+    width: 0;
+}
+
+.w-item-2 {
+    width: 133px;
+}
+
+.w-item-3 {
+    width: 44px;
+}
+
+.w-item-4 {
+    width: 267px;
+}
+
+.w-item-5 {
+    width: 200px;
+}
+
+.w-item-6 {
+    width: 300px;
+}

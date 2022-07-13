@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../dist/app.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="../dist/app.min.js" async></script>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar bg-light fixed-top">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="new-nav-items">
+                <a href="#" class="new-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="28" fill="#BDBDBD" class="bi bi-bell" viewBox="0 0 16 16" >
+                        <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z"/>
+                      </svg>
+                  </a>
+                  <a href="#" class="new-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="28" fill="#BDBDBD" class="bi bi-question-circle" viewBox="0 0 16 16">
+                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                        <path d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286zm1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94z"/>
+                      </svg>
+                  </a>
+                  <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="flush-headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                           <div class="svg-holder">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" fill="#BDBDBD" class="bi bi-person-circle" viewBox="0 0 16 16">
+                                    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                                    <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+                                </svg>
+                           </div>
+                        </button>
+                      </h2>
+                      <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                      </div>
+                    </div>
+                  </div>
+              </div>
+              
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item border">
+                      <a class="nav-link grey active" aria-current="page" href="#">
+                        Dashboard
+                      </a>
+                    </li>
+                    <li class="nav-item" >
+                        <a class="nav-link active" aria-current="page" href="#">
+                          Analitycs
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link active" aria-current="page" href="#">
+                          Pages
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link active js-nav-opener" aria-current="page" href="#">
+                          Profile
+                        </a>
+                    </li>
+                    <li class="nav-item bord">
+                        <a class="nav-link active " aria-current="page" href="#">
+                          Apps
+                        </a>
+                    </li>
+                  </ul>
+                  <div class="settings">
+                    <a class="nav-link new active" aria-current="page" href="#">
+                      <div class="new-svg-holder">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#8F8F8F" class="bi bi-gear-fill" viewBox="0 0 16 16">
+                          <path d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z"/>
+                        </svg>
+                      </div>
+                      Settings</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <section class="profile">
+      <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Library</li>
+        </ol>
+      </nav>
+      <div class="title-holder">
+        <p class="title">Profile</p>
+      </div>
+      <div class="main-holder">
+        <div class="first-holder">
+          <div class="user">
+            <div class="img-holder">
+              <img src="./img/Avatar.svg" alt="profile">
+            </div>
+            <div class="text-holder">
+              <p>User Name</p>
+            </div>
+            <div class="txt-holder">
+              <p>Position / Role</p>
+            </div>
+          </div>
+          <div class="my-skills">
+            <div class="skills">
+              <div class="skills-holder">
+                <p>My Skills</p>
+                <button type="button" class="btn btn-secondary">Edit</button>
+              </div>
+              <div class="progres-txt">
+                <p>Angular</p>
+              </div>
+              <div class="progress">
+                <div class="progress-bar w-item-1" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+              <div class="progres-txt">
+                <p>Vue.js</p>
+              </div>
+              <div class="progress">
+                <div class="progress-bar w-item-2" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+              <div class="progres-txt">
+                <p>Node.js</p>
+              </div>
+              <div class="progress">
+                <div class="progress-bar w-item-3" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+              <div class="progres-txt">
+                <p>JavaScript</p>
+              </div>
+              <div class="progress">
+                <div class="progress-bar w-item-4" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+              <div class="progres-txt">
+                <p>TypeScript</p>
+              </div>
+              <div class="progress">
+                <div class="progress-bar w-item-5" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+              <div class="progres-txt">
+                <p>CSS</p>
+              </div>
+              <div class="progress">
+                <div class="progress-bar w-item-6" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+              <div class="progres-txt">
+                <p>HTML</p>
+              </div>
+              <div class="progress">
+                <div class="progress-bar w-100" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="second-holder">
+          <div class="tabs">
+            <div class="card-container">
+              <ul class="nav nav-tabs" id="myTab" role="tablist">
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Personal Details</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">User Data</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Help</button>
+                  </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                  <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+                      <div class="tab-container">
+                          <div class="details">
+                              <p>Personal Details</p>
+                          </div>
+                          <form action="#">
+                              <div class="input-first-holder">
+                                  <div class="first">
+                                      <label for="basic-url" class="form-label">First Name</label>
+                                      <div class="input-group mb-3">
+                                      <input type="text" class="form-control" id="basic-url" placeholder="example" aria-describedby="basic-addon3">
+                                      <span class="input-group-text" id="basic-addon3">
+                                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gear" viewBox="0 0 16 16">
+                                              <path d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492zM5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0z"/>
+                                              <path d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52l-.094-.319zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115l.094-.319z"/>
+                                          </svg>
+                                      </span>
+                                      </div>
+                                  </div>
+                                  <div class="second">
+                                      <label for="basic-url" class="form-label">Last Name</label>
+                                  <div class="input-group mb-3">
+                                      <input type="text" class="form-control" id="basic-url" placeholder="example" aria-describedby="basic-addon3">
+                                      <span class="input-group-text" id="basic-addon3">
+                                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gear" viewBox="0 0 16 16">
+                                              <path d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492zM5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0z"/>
+                                              <path d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52l-.094-.319zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115l.094-.319z"/>
+                                          </svg>
+                                      </span>
+                                  </div>
+                                  </div>
+                              </div>
+                              <div class="input-first-holder">
+                                  <div class="first">
+                                      <label for="basic-url" class="form-label">Phone Number</label>
+                                      <div class="input-group mb-3">
+                                      <input type="tel" class="form-control" id="basic-url" placeholder="example" aria-describedby="basic-addon3">
+                                      <span class="input-group-text" id="basic-addon3">
+                                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gear" viewBox="0 0 16 16">
+                                              <path d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492zM5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0z"/>
+                                              <path d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52l-.094-.319zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115l.094-.319z"/>
+                                          </svg>
+                                      </span>
+                                      </div>
+                                  </div>
+                                  <div class="second">
+                                      <label for="basic-url" class="form-label">Email Address</label>
+                                  <div class="input-group mb-3">
+                                      <input type="email" class="form-control" id="basic-url" placeholder="example" aria-describedby="basic-addon3">
+                                      <span class="input-group-text" id="basic-addon3">
+                                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gear" viewBox="0 0 16 16">
+                                              <path d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492zM5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0z"/>
+                                              <path d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52l-.094-.319zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115l.094-.319z"/>
+                                          </svg>
+                                      </span>
+                                  </div>
+                                  </div>
+                              </div>
+                              <div class="input-first-holder">
+                                  <div class="first">
+                                      <label for="basic-url" class="form-label">Date Of Birth</label>
+                                      <div class="input-group mb-3 date">
+                                      <input type="text" class="form-control" id="basic-url" placeholder="example" aria-describedby="basic-addon3">
+                                      <span class="input-group-text" id="basic-addon3">
+                                          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-calendar-check" viewBox="0 0 16 16">
+                                              <path d="M10.854 7.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 9.793l2.646-2.647a.5.5 0 0 1 .708 0z"/>
+                                              <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+                                            </svg>
+                                      </span>
+                                      </div>
+                                  </div>
+                                  <div class="second">
+                                      <label for="basic-url" class="form-label">Country</label>
+                                  <div class="input-group mb-3 country">
+                                      <input type="text" class="form-control" id="basic-url" placeholder="example" aria-describedby="basic-addon3">
+                                      <span class="input-group-text" id="basic-addon3">
+                                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gear" viewBox="0 0 16 16">
+                                              <path d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492zM5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0z"/>
+                                              <path d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52l-.094-.319zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115l.094-.319z"/>
+                                          </svg>
+                                      </span>
+                                  </div>
+                                  </div>
+                                  <div class="third">
+                                      <label for="basic-url" class="form-label">City</label>
+                                  <div class="input-group mb-3 city">
+                                      <input type="text" class="form-control" id="basic-url" placeholder="example" aria-describedby="basic-addon3">
+                                      <span class="input-group-text" id="basic-addon3">
+                                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gear" viewBox="0 0 16 16">
+                                              <path d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492zM5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0z"/>
+                                              <path d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52l-.094-.319zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115l.094-.319z"/>
+                                          </svg>
+                                      </span>
+                                  </div>
+                                  </div>
+                                  <div class="upload">
+                                      <label for="inputGroupFile02" class="form-label">City</label>
+                                      <div class="input-group mb-3 new">
+                                      <input type="file" class="form-control" id="inputGroupFile02">
+                                      <label class="input-group-text" for="inputGroupFile02">Upload</label>
+                                  </div>
+                                  </div>
+                              </div>
+                              <div class="input-first-holder">
+                                  <div class="first">
+                                      <label for="basic-url" class="form-label">First Name</label>
+                                      <div class="input-group mb-3">
+                                      <input type="text" class="form-control" id="basic-url" placeholder="example" aria-describedby="basic-addon3">
+                                      <span class="input-group-text" id="basic-addon3">
+                                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gear" viewBox="0 0 16 16">
+                                              <path d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492zM5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0z"/>
+                                              <path d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52l-.094-.319zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115l.094-.319z"/>
+                                          </svg>
+                                      </span>
+                                      </div>
+                                  </div>
+                                  <div class="second">
+                                      <label for="basic-url" class="form-label">Last Name</label>
+                                  <div class="input-group mb-3">
+                                      <span class="input-group-text" id="basic-addon3">
+                                          http://
+                                      </span>
+                                      <input type="text" class="form-control" id="basic-url" placeholder="example" aria-describedby="basic-addon3">
+                                      
+                                  </div>
+                                  </div>
+                              </div>
+                              <div class="aria-label-holder">
+                                  <label for="floatingTextarea" class="form-label ">
+                                      Description
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#6C757D" class="bi bi-info-circle info" viewBox="0 0 16 16">
+                                          <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                          <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                                      </svg>
+                                  </label>
+                              </div>
+                              <div class="form-floating">
+                                  <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                                  <label for="floatingTextarea" class="about">A little bit about yourself...</label>
+                              </div>
+                              <div class="button-holder">
+                                  <input type="submit" class="btn btn-dark" value="Update">
+                                  <input type="submit"  class="btn btn-secondary" value="Cancel">
+                              </div>
+                            </form>
+                      </div>
+                  </div>
+                  <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+                      <div class="tab-container">
+                          <div class="details activity">
+                              <p>Users Activity</p>
+                          </div>
+                          <div class="active-users">
+                              <p>List of last active users</p>
+                          </div>
+                          <table class="table">
+                              <thead class="thead-head">
+                                <tr>
+                                  <th scope="col">#</th>
+                                  <th scope="col">First</th>
+                                  <th scope="col">Last</th>
+                                  <th scope="col">Handle</th>
+                                </tr>
+                              </thead>
+                              <tbody class="table-group-divider">
+                                <tr>
+                                  <th scope="row">1</th>
+                                  <td>Mark</td>
+                                  <td>Otto</td>
+                                  <td>@mdo</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">2</th>
+                                  <td>Jacob</td>
+                                  <td>Thornton</td>
+                                  <td>@fat</td>
+                                </tr>
+                                <tr class="twiter">
+                                  <th scope="row">3</th>
+                                  <td colspan="2">Larry the Bird</td>
+                                  <td>@twitter</td>
+                                </tr>
+                              </tbody>
+                          </table>
+                          <table class="table table-striped">
+                              <thead class="new-head">
+                                  <tr>
+                                    <th scope="col">
+                                      <div class="check-holder">
+                                          <div class="form-check">
+                                              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                              <label class="form-check-label" for="flexCheckDefault">
+                                              </label>
+                                          </div>
+                                          ID
+                                      </div>
+                                  </th>
+                                    <th scope="col">New requests </th>
+                                    <th scope="col">Date</th>
+                                    <th scope="col">Status</th>
+                                    <th scope="col">Action</th>
+                                  </tr>
+                                </thead>
+                                <tbody class="table-group-divider">
+                                  <tr>
+                                    <th scope="row">
+                                      <div class="check-holder">
+                                          <div class="form-check">
+                                              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                              <label class="form-check-label" for="flexCheckDefault">
+                                              </label>
+                                          </div>
+                                          1
+                                      </div>
+                                  </th>
+                                    <td>David Jhonson</td>
+                                    <td>20 June, 2022</td>
+                                    <td>
+                                      <div class="span-holder-warning">
+                                          <span class="badge text-bg-warning">Warning</span>
+                                      </div>
+                                    </td>
+                                    <td>
+                                      <div class="button-holder new">
+                                          <button type="button" class="btn btn-dark new">Edit</button>
+                                          <button type="button"  class="btn btn-secondary new">Delete</button>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">
+                                      <div class="check-holder">
+                                          <div class="form-check">
+                                              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                              <label class="form-check-label" for="flexCheckDefault">
+                                              </label>
+                                          </div>
+                                          2
+                                      </div>
+                                    </th>
+                                    <td>Lisa Mitchell</td>
+                                    <td>12 June, 2022</td>
+                                    <td>
+                                      <div class="span-holder-warning">
+                                          <span class="badge text-bg-success">Confirmed</span>
+                                      </div>
+                                    </td>
+                                    <td>
+                                      <div class="button-holder new">
+                                          <button type="button" class="btn btn-dark new">Edit</button>
+                                          <button type="button"  class="btn btn-secondary new">Delete</button>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                  <tr class="twiter">
+                                    <th scope="row">
+                                      <div class="check-holder">
+                                          <div class="form-check">
+                                              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                              <label class="form-check-label" for="flexCheckDefault">
+                                              </label>
+                                          </div>
+                                          3
+                                      </div>
+                                  </th>
+                                    <td colspan="1">Peter Mickelson</td>
+                                    <td>6 June, 2022</td>
+                                    <td>
+                                      <div class="span-holder-warning">
+                                          <span class="badge text-bg-danger">Cancelled</span>
+                                      </div>
+                                    </td>
+                                    <td>
+                                      <div class="button-holder new">
+                                          <button type="button" class="btn btn-dark new">Edit</button>
+                                          <button type="button"  class="btn btn-secondary new">Delete</button>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                  <tr class="twiter">
+                                      <th scope="row">
+                                          <div class="check-holder">
+                                              <div class="form-check">
+                                                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                  <label class="form-check-label" for="flexCheckDefault">
+                                                  </label>
+                                              </div>
+                                              4
+                                          </div>
+                                      </th>
+                                      <td colspan="1">Jina Larson</td>
+                                      <td>3 June, 2022</td>
+                                      <td>
+                                          <div class="span-holder-warning">
+                                              <span class="badge text-bg-danger">Cancelled</span>
+                                          </div>
+                                      </td>
+                                      <td>
+                                          <div class="button-holder new">
+                                              <button type="button" class="btn btn-dark new">Edit</button>
+                                              <button type="button"  class="btn btn-secondary new">Delete</button>
+                                          </div>
+                                      </td>
+                                  </tr>
+                                  <tr class="twiter">
+                                      <th scope="row">
+                                          <div class="check-holder">
+                                              <div class="form-check">
+                                                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                  <label class="form-check-label" for="flexCheckDefault">
+                                                  </label>
+                                              </div>
+                                              5
+                                          </div>
+                                      </th>
+                                      <td colspan="1">Jeanne Lambert</td>
+                                      <td>30 May, 2022</td>
+                                      <td>
+                                          <div class="span-holder-warning">
+                                              <span class="badge text-bg-success">Confirmed</span>
+                                          </div>
+                                      </td>
+                                      <td>
+                                          <div class="button-holder new">
+                                              <button type="button" class="btn btn-dark new">Edit</button>
+                                              <button type="button"  class="btn btn-secondary new">Delete</button>
+                                          </div>
+                                      </td>
+                                  </tr>
+                                  <tr class="twiter">
+                                      <th scope="row">
+                                          <div class="check-holder">
+                                              <div class="form-check">
+                                                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                  <label class="form-check-label" for="flexCheckDefault">
+                                                  </label>
+                                              </div>
+                                              6
+                                          </div>
+                                      </th>
+                                      <td colspan="1">Alex Simpson</td>
+                                      <td>28 May, 2022</td>
+                                      <td>
+                                          <div class="span-holder-warning">
+                                              <span class="badge text-bg-danger">Cancelled</span>
+                                          </div>
+                                      </td>
+                                      <td>
+                                          <div class="button-holder new">
+                                              <button type="button" class="btn btn-dark new">Edit</button>
+                                              <button type="button"  class="btn btn-secondary new">Delete</button>
+                                          </div>
+                                      </td>
+                                  </tr>
+                                  <tr class="twiter">
+                                      <th scope="row">
+                                          <div class="check-holder">
+                                              <div class="form-check">
+                                                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                  <label class="form-check-label" for="flexCheckDefault">
+                                                  </label>
+                                              </div>
+                                              7
+                                          </div>
+                                      </th>
+                                      <td colspan="1">Lex Varnstain</td>
+                                      <td>26 May, 2022</td>
+                                      <td>
+                                          <div class="span-holder-warning">
+                                              <span class="badge text-bg-warning">Warning</span>
+                                          </div>
+                                      </td>
+                                      <td>
+                                          <div class="button-holder new">
+                                              <button type="button" class="btn btn-dark new">Edit</button>
+                                              <button type="button"  class="btn btn-secondary new">Delete</button>
+                                          </div>
+                                      </td>
+                                  </tr>
+                                  <tr class="twiter">
+                                      <th scope="row">
+                                          <div class="check-holder">
+                                              <div class="form-check">
+                                                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                  <label class="form-check-label" for="flexCheckDefault">
+                                                  </label>
+                                              </div>
+                                              8
+                                          </div>
+                                      </th>
+                                      <td colspan="1">Hanna Wilson</td>
+                                      <td>24 May, 2022</td>
+                                      <td>
+                                          <div class="span-holder-warning">
+                                              <span class="badge text-bg-success">Confirmed</span>
+                                          </div>
+                                      </td>
+                                      <td>
+                                          <div class="button-holder new">
+                                              <button type="button" class="btn btn-dark new">Edit</button>
+                                              <button type="button"  class="btn btn-secondary new">Delete</button>
+                                          </div>
+                                      </td>
+                                      
+                                  </tr>
+                                </tbody>
+                          </table>
+      
+                      </div>
+                  </div>
+                  <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+                    <div class="tab-container">
+                      <div class="details help">
+                          <p>Help</p>
+                      </div>
+                      <div class="message-new">
+                          <p>Read this section carefully. If you still have questions, please contact support.</p>
+                      </div>
+                      <div class="main-help-holder">
+                          <div class="help-holder-first">
+                              <div class="title-general">
+                                  <p>General Questions </p>
+                              </div>
+                              <div class="acordeon-holder-new">
+                                  <div class="accordion accordion-flush" id="accordionFlushExample">
+                                      <div class="accordion-item">
+                                        <h2 class="accordion-header" id="flush-headingOne">
+                                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                              Where can I get some?
+                                          </button>
+                                        </h2>
+                                        <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                          <div class="accordion-body">This is the first item's accordion body. It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the .accordion-body, though the transition does limit overflow.</div>
+                                        </div>
+                                      </div>
+                                      <div class="accordion-item">
+                                        <h2 class="accordion-header" id="flush-headingTwo">
+                                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                              Why do we use it?
+                                          </button>
+                                        </h2>
+                                        <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                          <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque iure sequi deserunt provident illum consequuntur maiores sunt nisi labore culpa voluptatum dolorem voluptas qui exercitationem, amet nostrum ipsum! Vero quos nam itaque corporis eos odit, illum, neque facere quam non aliquid omnis officia laborum rerum, libero sequi debitis tempore error! Quo aliquid delectus, voluptas commodi, totam possimus sapiente tenetur perspiciatis eius dolor voluptatibus voluptatum, quibusdam eligendi ipsa quisquam quod aut. Accusantium, repellendus? Nam repellendus provident dolor, repudiandae maxime sint quasi voluptatum quaerat aperiam aut tempora autem magnam blanditiis a. Sapiente enim doloribus eligendi, consequuntur rerum et. Blanditiis repellat quis quo.</div>
+                                        </div>
+                                      </div>
+                                      <div class="accordion-item">
+                                        <h2 class="accordion-header" id="flush-headingThree">
+                                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                              Where does it come from?
+                                          </button>
+                                        </h2>
+                                        <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                          <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus perferendis magnam tempore at, mollitia beatae. Ratione cumque quia aperiam in. Qui neque nemo quibusdam eos illum, provident eum debitis quasi totam harum pariatur dolores laborum vero quos accusantium amet. Accusamus, voluptatum quod voluptatibus minima quo modi dolores commodi culpa placeat repellendus libero reprehenderit quia numquam vel in vero iusto, nulla beatae fuga perferendis itaque aliquid necessitatibus explicabo eaque. Voluptas placeat rem eum corrupti assumenda, maiores eligendi numquam sint dolorem temporibus, error, eos qui illum! Excepturi voluptatum tempora maxime dolor reiciendis aperiam optio, quos ratione. Veritatis harum magnam natus fugit a.</div>
+                                        </div>
+                                      </div>
+                                    </div>
+                              </div>
+                          </div>
+                          <div class="help-holder-second">
+                              <div class="title-general">
+                                  <p>Manage Account </p>
+                              </div>
+                              <div class="acordeon-holder-new">
+                                  <div class="accordion" id="accordionExample">
+                                      <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingOne">
+                                          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                              Where can I get some?
+                                          </button>
+                                        </h2>
+                                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                          <div class="accordion-body">
+                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius facere odio nam consequatur accusantium nobis laudantium nostrum unde, totam, doloribus inventore obcaecati placeat temporibus maxime, deleniti alias porro at provident. Libero ipsum iste iusto recusandae at cupiditate delectus eveniet accusamus nam cumque quo esse amet, quas nihil blanditiis? Sequi adipisci velit optio. Dolorem eveniet a temporibus culpa excepturi voluptatum iure, quo autem ipsam. Accusamus ipsum dicta fugit ducimus magni consequatur at neque, quo fugiat provident iure, vel animi adipisci numquam iusto consectetur officiis quis perferendis exercitationem sint a! Ad libero eius ex molestiae adipisci assumenda sequi, fuga nostrum neque atque?
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingTwo">
+                                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                              Why do we use it?
+                                          </button>
+                                        </h2>
+                                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                          <div class="accordion-body">
+                                              2nd Accordion Content - Lorem ipsum dolor sit amet, vince adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingThree">
+                                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                              Why do we use it?
+                                          </button>
+                                        </h2>
+                                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                          <div class="accordion-body">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, harum. Eaque ducimus cupiditate amet aperiam pariatur unde veritatis laborum exercitationem maxime! Et eos quos quae, doloribus suscipit, soluta doloremque vero, officiis minima explicabo voluptates architecto sint ducimus distinctio veritatis voluptas nisi vel? Voluptate eos odit fuga recusandae animi nostrum nisi provident. Quaerat laborum voluptate reiciendis ad nemo, totam, dicta pariatur consectetur ipsum, sed veniam asperiores fugit impedit facere provident? Dolorem alias totam soluta eaque odit repudiandae? Ad, expedita esse quae facere natus ratione magnam temporibus possimus veritatis. Nam delectus repellendus velit voluptates, architecto modi necessitatibus id illum sunt odio vel.
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>    
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  </div>
+                </div>
+          </div>
+          </div>
+        </div>
+      </div>
+ 
+      
+    </section>
+      
+</body>
+</html>
